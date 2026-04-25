@@ -1,0 +1,4 @@
+#pliki których nie chcę wrzucać
+~$*.rtf
+*.tmp
+word.rtf
