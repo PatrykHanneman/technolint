@@ -54,3 +54,19 @@ body {
 .btn-primary:hover {
     transform: translateY(-3px); 
 }
+.feature-card {
+    background: fff;
+    padding: 20px;
+    border-radius: 6px;
+    transition: 0.3s;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 0.5s forwards;
+}
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+@keyframes fadeInUp {
+    to { opacity: 1; transform: translateY(0); }
+}
