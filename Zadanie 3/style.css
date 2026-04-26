@@ -71,8 +71,28 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 @media (max-width: 768px) {
-    .features-grid, .pricing-grid {
+    .features-grid,
+    .pricing-grid {
+        display: grid;
         grid-template-columns: 1fr;
+        gap: 20px;
     }
-    .hero h1 { font-size: 2rem; }
+    .hero h1 {
+        font-size: 2rem; 
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+    font-size: 1.2rem;
+    }
+    .site-header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
